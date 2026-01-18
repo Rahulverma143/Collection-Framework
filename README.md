@@ -74,15 +74,17 @@ Collection (interface)
 
 ### 🔹 Map Interface Hierarchy (Not a Child of Collection)
 
-                Map (Interface - Root)
-                     |
-   ------------------------------------------------------------------------
-   |                   |                       |                          |
- HashMap (Class)    SortedMap (Interface)   ConcurrentMap (Interface)  Hashtable (Class)
-   |                   |                       |                           |
-LinkedHashMap (Class) TreeMap (Class)    ConcurrentHashMap (Class)     Properties(Legacy Class)
-                        |
-                  NavigableMap (Interface)
+  Map (interface)
+│
+├── HashMap (class)
+│   └── LinkedHashMap (class)
+├── SortedMap (interface)
+│   └── NavigableMap (interface)
+│       └── TreeMap (class)
+├── ConcurrentMap (interface)
+│   └── ConcurrentHashMap (class)
+└── Hashtable (class)
+
 
 ---
 
@@ -173,10 +175,11 @@ Examples showing:
 👤 Author
 Rahul Verma
 GitHub: Rahulverma143
+Link:- https://github.com/Rahulverma143/Collection-Framework
 
 ## 🛠 How to Run the Project
 
-### ▶ Using Command Line
+###  Using Command Line
 ```bash
 cd Collection-Framework/src
 javac *.java
@@ -185,6 +188,4 @@ java ClassName
 ⭐ If You Find This Helpful
 
 Please ⭐ star the repository and share it with others learning Java 😊
-
-
 
