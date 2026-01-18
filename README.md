@@ -73,19 +73,16 @@ Collection (interface)
 ---
 
 ### 🔹 Map Interface Hierarchy (Not a Child of Collection)
-Map (interface)
-│
-├── HashMap (class)
-│ └── LinkedHashMap (class)
-│
-├── SortedMap (interface)
-│ └── NavigableMap (interface)
-│ └── TreeMap (class)
-│
-├── Hashtable (class)
-│
-└── ConcurrentMap (interface)
-└── ConcurrentHashMap (class)
+
+                Map (Interface - Root)
+                     |
+   ------------------------------------------------------------------------
+   |                   |                       |                          |
+ HashMap (Class)    SortedMap (Interface)   ConcurrentMap (Interface)  Hashtable (Class)
+   |                   |                       |                           |
+LinkedHashMap (Class) TreeMap (Class)    ConcurrentHashMap (Class)     Properties(Legacy Class)
+                        |
+                  NavigableMap (Interface)
 
 ---
 
